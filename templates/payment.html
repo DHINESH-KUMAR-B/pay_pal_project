@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="/static/payment.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">AI Pay</div>
 
         <ul class="nav-links">
-            <li><a href="/templates/index.html">Home</a></li>
-            <li><a href="/templates/chart.html">Chart</a></li>
-            <li><a href="/templates/bis.html">Business</a></li>
-            <li><a href="/templates/inbox.html">Inbox</a></li>
-            <li><a href="/templates/payment.html">Payment</a></li>
-            <li><a href="/templates/anylize.html">Anylise</a></li>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('chart')}}">Chart</a></li>
+            <li><a href="{{url_for('Business')}}">Business</a></li>
+            <li><a href="{{url_for('Inbox')}}">Inbox</a></li>
+            <li><a href="{{url_for('Payment')}}">Payment</a></li>
+            <li><a href="{{url_for('Anylise')}}">Anylise</a></li>
             
         </ul>
     </nav>

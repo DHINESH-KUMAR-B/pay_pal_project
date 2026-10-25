@@ -20,11 +20,31 @@ app.config["SQLALCHEMY_DATABASE_URI"] = (
 db.init_app(app)
 
 # Import models
-from models import bussiness_data
+from models import bussiness_data,transaction_data,sales_data
 
 @app.route("/")
 def home():
     return render_template("index.html")
+
+@app.route("/chart")
+def chart():
+    return render_template("chart.html")
+
+@app.route("/Business")
+def Business():
+    return render_template("bis.html")
+
+@app.route("/Inbox")
+def Inbox():
+    return render_template("inbox.html")
+
+@app.route("/Payment")
+def Payment():
+    return render_template("payment.html")
+
+@app.route("/Anylise")
+def Anylise():
+    return render_template("anylize.html")
 
 if __name__ == "__main__":
     with app.app_context():
