@@ -96,7 +96,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 80px 8%;
-    min-height: 85vh;
+    min-height: 80vh;
 }
 
 .hero-content{
@@ -162,6 +162,7 @@ body{
     background-color: rgba(54, 16, 16, 0.525);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin-bottom: -30px;
 }
 
 /* Features */
@@ -174,4 +175,7 @@ body{
     font-size: 40px;
     color: #003087;
     margin-bottom: 50px;
+}
+footer{
+    margin-top: -10vh;
 }
