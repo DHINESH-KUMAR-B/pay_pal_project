@@ -1,0 +1,177 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f4f7fc;
+    color: #333;
+}
+/* Sidebar */
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: #003087;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.logo{
+    color:white;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 15px;
+    background-color: #003087;
+}
+
+.nav-links li{
+    width: 100%;
+}
+
+.nav-links a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.nav-links a:hover{
+    background: rgba(255,255,255,0.15);
+}
+
+.nav-links a.active{
+    background: #0070e0;
+}
+
+/* Main Content */
+.hero,.features,.stats,footer{
+    margin-left: 250px;
+}
+
+/* Responsive */
+@media (max-width:768px){
+
+    .navbar{
+        width: 70px;
+    }
+
+    .logo{
+        font-size: 18px;
+    }
+
+    .nav-links a{
+        padding: 12px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .hero,.features,.stats,footer{
+        margin-left: 70px;
+    }
+}
+/* Hero Section */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    min-height: 85vh;
+}
+
+.hero-content{
+    margin-top: -10vh;
+}
+
+.hero-content h1{
+    font-size: 55px;
+    color: #003087;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero-buttons{
+    display: flex;
+    margin-top: 7.5vh;
+    gap: 15px;
+}
+
+.primary-btn{
+    padding: 14px 30px;
+    border: none;
+    background: #0070e0;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn:hover{
+    background: #005ec4;
+}
+
+.secondary-btn{
+    padding: 14px 30px;
+    border: 2px solid #0070e0;
+    background: transparent;
+    color: #0070e0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover{
+    background: #0070e0;
+    color: white;
+}
+
+/* Hero Image */
+.history{
+    width: 95vh;
+    height: 65vh;
+    background-color: rgba(54, 16, 16, 0.525);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Features */
+.features{
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.features h2{
+    font-size: 40px;
+    color: #003087;
+    margin-bottom: 50px;
+}
